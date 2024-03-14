@@ -12,3 +12,8 @@ for _ in range(n):
 check = sorted(check, reverse=True)
 for i in check:
     print(i)
+
+# dict 추가
+# dict[key] = value
+# dict 접근
+# check[name] -> log
