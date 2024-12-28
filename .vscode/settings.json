@@ -3,5 +3,12 @@
         "appendleft",
         "appned",
         "popleft"
-    ]
+    ],   
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints.enabled": false
 }
