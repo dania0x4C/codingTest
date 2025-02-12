@@ -10,5 +10,6 @@
         "other": "off"
     },
     "editor.suggestOnTriggerCharacters": false,
-    "editor.parameterHints.enabled": false
+    "editor.parameterHints.enabled": false,
+    "editor.fontSize": 14
 }
