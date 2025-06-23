@@ -1,0 +1,8 @@
+SELECT thirdE.ID as ID
+FROM ECOLI_DATA as firstE
+LEFT JOIN ECOLI_DATA as secondE 
+ON firstE.ID = secondE.PARENT_ID
+LEFT JOIN ECOLI_DATA as thirdE 
+ON secondE.ID = thirdE.PARENT_ID
+WHERE thirdE.ID IS NOT NULL AND firstE.PARENT_ID IS NULL
+ORDER BY thirdE.ID
