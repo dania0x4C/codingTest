@@ -1,49 +1,76 @@
 {
-    "python.pythonPath": "/Users/ljm8350/venvs/jupyter/bin/python",
-    "cSpell.words": [
-        "appendleft",
-        "appned",
-        "popleft"
-    ],   
-    "editor.fontSize": 14,
-    "editor.quickSuggestions": {
-        "comments": "off",
-        "strings": "off",
-        "other": "off"
-    },
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.wordBasedSuggestions": "off",
-    "editor.parameterHints.enabled": false,
-    "cursor.experimental.autocomplete.enabled": false,
-    "problems.showErrors": false,
-    "problems.showWarnings": false,
-    "problems.showInfos": false,
-    "editor.renderValidationDecorations": "off",
-    "python.linting.enabled": false,
-    "python.analysis.diagnosticMode": "off",
-    "jupyter.linting.enabled": false,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": false,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.pylamaEnabled": false,
-    "python.linting.prospectorEnabled": false,
-    "python.linting.pydocstyleEnabled": false,
-    "python.linting.mypyEnabled": false,
-    "python.linting.banditEnabled": false,
-    "jupyter.showVariableViewWhenDebugging": false,
-    "jupyter.enableScrollingForCellOutputs": true,
-    "python.analysis.typeCheckingMode": "off",
-    "python.analysis.autoImportCompletions": false,
-    "python.showStartPage": false,
-    "editor.hover.enabled": false,
-    "editor.lightbulb.enabled": "off",
-    "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
-    "jupyter.enableExtendedPythonKernel": false,
-    "jupyter.disableJupyterAutoStart": true,
-    "notebook.output.textLineLimit": 0,
-    "notebook.cellToolbarLocation": {
-        "default": "hidden"
-    },
-    "jupyter.widgetScriptSources": [],
-    "jupyter.interactiveWindow.textEditor.executeSelection": false
+  // 🐍 Python 실행 경로
+  "python.pythonPath": "/Users/ljm8350/venvs/jupyter/bin/python",
+
+  // 🧠 코드 편집기 관련 설정 (자동완성, 힌트 제거)
+  "editor.fontSize": 14,
+  "editor.hover.enabled": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": false,
+    "other": false
+  },
+
+  // 🔕 진단/분석/경고 제거 설정
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.useLibraryCodeForTypes": false,
+  "python.analysis.indexing": false,
+  "python.analysis.rules": {
+    "reportUndefinedVariable": "none",
+    "reportGeneralTypeIssues": "none",
+    "reportMissingImports": "none",
+    "reportUnusedImport": "none",
+    "reportUnusedVariable": "none",
+    "reportPrivateUsage": "none",
+    "reportOptionalSubscript": "none",
+    "reportOptionalMemberAccess": "none",
+    "reportUnboundVariable": "none",
+    "reportPossiblyUnboundVariable": "none",
+    "reportMissingParameterType": "none",
+    "reportMissingTypeStubs": "none",
+    "reportUnknownParameterType": "none",
+    "reportUnknownVariableType": "none",
+    "reportUnknownMemberType": "none",
+    "reportUnknownArgumentType": "none"
+  },
+
+  // 🧼 시각적 표시 제거
+  "editor.renderValidationDecorations": "none",
+  "problems.decorations.enabled": false,
+
+  // 🔕 Linting 완전 비활성화
+  "python.linting.enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.pylamaEnabled": false,
+  "python.linting.prospectorEnabled": false,
+  "python.linting.pydocstyleEnabled": false,
+  "python.linting.mypyEnabled": false,
+  "python.linting.banditEnabled": false,
+  "jupyter.linting.enabled": false,
+
+  // 📓 Jupyter 노트북 관련 설정
+  "notebook.output.textLineLimit": 999,
+  "notebook.cellToolbarLocation": {
+    "default": "hidden"
+  },
+  "jupyter.showVariableViewWhenDebugging": false,
+  "jupyter.enableScrollingForCellOutputs": true,
+  "jupyter.enableExtendedPythonKernel": true,
+  "jupyter.disableJupyterAutoStart": true,
+  "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
+  "jupyter.interactiveWindow.textEditor.executeSelection": false,
+
+  // ✏️ 맞춤법 경고 방지용 사용자 정의 단어
+  "cSpell.words": ["appendleft", "appned", "popleft"],
+
+  // 🔕 시작 페이지 비활성화
+  "python.showStartPage": false
 }
