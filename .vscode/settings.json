@@ -1,8 +1,23 @@
 {
-  // 🐍 Python 실행 경로
+  // 🐍 Python 실행 경로 (사용자 설정 유지)
   "python.pythonPath": "/Users/ljm8350/venvs/jupyter/bin/python",
 
-  // 🧠 코드 편집기 관련 설정 (자동완성, 힌트 제거)
+  // 🚨 [핵심] 파이썬 언어 서버 자체를 꺼버립니다. (가장 중요)
+  // 이걸 끄면 분석 기능이 멈춰서 자동완성이 아예 안 뜹니다.
+  "python.languageServer": "None",
+
+  // 📓 [핵심] Jupyter Notebook 셀 내부 설정 강제 적용
+  // 일반 editor 설정이 노트북 안에는 안 먹힐 때가 많아서 이 설정이 필수입니다.
+  "notebook.editorOptionsCustomizations": {
+    "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.hover.enabled": false,
+    "editor.lightbulb.enabled": "off"
+  },
+
+  // 🧠 일반 에디터 설정 (백업용)
   "editor.fontSize": 14,
   "editor.hover.enabled": false,
   "editor.lightbulb.enabled": "off",
@@ -14,6 +29,8 @@
     "strings": false,
     "other": false
   },
+  "editor.inlineSuggest.enabled": false,  // 흐릿하게 나오는 추천 글씨 제거
+  "editor.acceptSuggestionOnEnter": "off", // 엔터 칠 때 자동완성 적용 방지
 
   // 🔕 진단/분석/경고 제거 설정
   "python.analysis.diagnosticMode": "openFilesOnly",
@@ -56,7 +73,7 @@
   "python.linting.banditEnabled": false,
   "jupyter.linting.enabled": false,
 
-  // 📓 Jupyter 노트북 관련 설정
+  // 📓 Jupyter 노트북 UI 설정
   "notebook.output.textLineLimit": 999,
   "notebook.cellToolbarLocation": {
     "default": "hidden"
@@ -68,7 +85,7 @@
   "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
   "jupyter.interactiveWindow.textEditor.executeSelection": false,
 
-  // ✏️ 맞춤법 경고 방지용 사용자 정의 단어
+  // ✏️ 맞춤법 검사기 단어 (유지)
   "cSpell.words": ["appendleft", "appned", "popleft"],
 
   // 🔕 시작 페이지 비활성화
